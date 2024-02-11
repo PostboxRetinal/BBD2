@@ -16,12 +16,12 @@ class Comics:
         print(self.comics)
 
     def filterComics(this, key, value):
-        filteredList =  list(filter(lambda x: x[key] == value,this.comics))
+        filteredList =  list(filter(lambda x: x[key] == value, this.comics))
         print(filteredList)
 
     def filterComics2(this, key, value):
-        filteredPlaylist = [ f for f in this.comics if f[key] == value]
-        print(filteredPlaylist)
+        filteredList2 = [f for f in this.comics if f[key] == value]
+        print(filteredList2)
 
 
   

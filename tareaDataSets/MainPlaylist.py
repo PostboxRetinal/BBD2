@@ -8,7 +8,7 @@ MiComic.loadDataFromCSV(file)
 artista = input("Ingrese nombre del escritor del cómic: ")
 MiComic.filterPlaylist("artist",artista)
 
-titulo = input("Ingrese nombre del escritor del cómic: ")
+titulo = input("Ingrese título del cómic que busca: ")
 anno = input("Ingrese año de escritura: ")
-MiComic.filterComics("artist",artista)
+MiComic.filterComics("title",titulo)
 
