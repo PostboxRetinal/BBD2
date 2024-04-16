@@ -1,5 +1,5 @@
 # Bases de datos 2, 2024 - Actividad preparatoria
-#una lista de tuplas como una versión de una "bd" "key/value"
+# una lista de tuplas como una versión de una "bd" "key/value"
 class Playlist:
     numQueries = 0    
     def __init__(self) -> None:

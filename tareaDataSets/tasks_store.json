@@ -1,0 +1,16 @@
+{
+    "Tareas":[
+        {"titulo":"diseño bd", "descripcion":"diagrama er/diagrama ir", "estado":"PENDIENTE", "porcentaje": 0.75 , "opcional":false, "bonus":0.10},
+        {"titulo":"implementar bd", "descripcion":"ir", "estado":"FINALIZADO", "porcentaje":"", "opcional":false, "bonus":0.10},
+        {"Developers":
+            [{"id":"111","name":"Diego"},
+            {"id":"222","name":"Luis"}
+            ]
+        }
+    ],
+    "Desarrolladores":[
+        {"id":"1", "nombre":"Juan", "rol":"Designer", "nivel":"junior"},
+        {"id":"2", "nombre":"Sebastian", "rol":"Programar", "nivel":"semi-senior"},
+        {"id":"3", "nombre":"Nicolas", "rol":"Programar", "nivel":"junior"}
+    ]
+}

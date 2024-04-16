@@ -19,9 +19,9 @@ class Comics:
         filteredList =  list(filter(lambda x: x[key] == value, this.comics))
         print(filteredList)
 
-    def filterComics2(this, key, value):
-        filteredList2 = [f for f in this.comics if f[key] == value]
-        print(filteredList2)
+    def filterComicsListComprehension(this, key, value):
+        filteredListListComprehension = [f for f in this.comics if f[key] == value]
+        print(filteredListListComprehension)
 
 
   

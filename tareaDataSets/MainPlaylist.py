@@ -1,14 +1,22 @@
 from MainComics import *
 
-#pedir nombre del archivo plano:
-file = input("Ingrese el nombre del archivo")
-
+#Input de archivo
+file = input("Ingrese la ruta del archivo: ")
+opc = int(input('Ingrese la opción de filtro deseada:\n1. Filtrar por artista\n2. Filtrar por título y año\n'))
 MiComic = Comics()
 MiComic.loadDataFromCSV(file)
-artista = input("Ingrese nombre del escritor del cómic: ")
-MiComic.filterPlaylist("artist",artista)
 
-titulo = input("Ingrese título del cómic que busca: ")
-anno = input("Ingrese año de escritura: ")
-MiComic.filterComics("title",titulo)
+if (opc == 1):
+    artista = input("Ingrese nombre del escritor del cómic: ")
+    MiComic.filterPlaylist("artist", artista)
 
+elif (opc == 2):
+    MiComic = Comics()
+    MiComic.loadDataFromCSV(file)
+    titulo = input("Ingrese título del cómic que busca: ")
+    anno = input("Ingrese año de escritura: ")
+    MiComic.filterComicsListComprehension("titulo", titulo)
+    MiComic.filterComics("title", titulo)
+
+else:
+    print("Ingresa una opción válida!")

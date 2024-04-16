@@ -1,0 +1,5 @@
+# Certificados PEM de acceso a mongoDB
+mongoDB_certs
+
+# Python virtual environment files
+couchDB/.venv
